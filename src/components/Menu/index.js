@@ -46,6 +46,9 @@ import { menuItemClick,actionItemClick } from "@/slice/menuSlice";
     <div className={cx(styles.iconWrapper,{[styles.active]:activeMenuItem===MENU_ITEMS.DOWNLOAD})} onClick={()=>handleActionItemClick(MENU_ITEMS.DOWNLOAD)}>
       <FontAwesomeIcon icon={faFileArrowDown}  className={styles.icon} />
     </div>
+    <div className={cx(styles.iconWrapper,{[styles.active]:activeMenuItem===MENU_ITEMS.DOWNLOAD})} onClick={()=>handleActionItemClick(MENU_ITEMS.DOWNLOAD)}>
+      <FontAwesomeIcon icon={faFileArrowDown}  className={styles.icon} />
+    </div>
   </div>
   )
 }
