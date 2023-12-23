@@ -27,7 +27,7 @@ const ToolBox=()=>{
             {showStrokeToolOption && 
         <div className={styles.toolboxItem}>
             
-            <h4 className={styles.toolText}>Stroke Color {activeMenuItem}</h4>
+            <h4 className={styles.toolText}>Stroke Color {color.toUpperCase()}</h4>
             <div className={styles.itemContainer}>
                 <div className={cx(styles.colorBox,{[styles.active]:color===COLORS.BLACK})} style={{backgroundColor:COLORS.BLACK}} onClick={()=>updateColor(COLORS.BLACK)}/>
                 <div className={cx(styles.colorBox,{[styles.active]:color===COLORS.BLUE})} style={{backgroundColor:COLORS.BLUE}} onClick={()=>updateColor(COLORS.BLUE)}/>
